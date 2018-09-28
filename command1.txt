@@ -1,0 +1,2 @@
+./hbase org.apache.hadoop.hbase.PerformanceEvaluation --nomapred --rows=1000000 --compress=NONE --flushCommits=false --writeToWAL=true --autoFlush=false --oneCon=false --latency=false --bloomFilter=ROW --valueSize=10 --columns=10 --families=1 --table=test1 sequentialWrite 1 &
+./hbase org.apache.hadoop.hbase.PerformanceEvaluation --nomapred --rows=1000000 --compress=NONE --flushCommits=false --writeToWAL=true --autoFlush=false --oneCon=false --latency=false --bloomFilter=ROW --valueSize=10 --columns=10 --families=1 --table=test2 sequentialWrite 1
